@@ -47,6 +47,6 @@ Unity 2020.3.4f1
 ・比嘉愛斗 / デザイナー
 
 ## ゲームスクリーンショット
-![スクリーンショット (269)](https://user-images.githubusercontent.com/84373723/169730424-6b2689a0-2e8c-4885-89d1-c201f95df334.png)
-![スクリーンショット (270)](https://user-images.githubusercontent.com/84373723/169731437-ac001a8f-3f29-4480-860e-b5281fe2699c.png)
-![スクリーンショット (271)](https://user-images.githubusercontent.com/84373723/169731445-75c60a51-b6ff-4dd7-acfd-e6413b64e561.png)
+![CatchCopy](https://github.com/itc-c21026/ImConveniencePower/blob/main/ScreenShot/CatchCopy.png)  
+![GamePlay1](https://github.com/itc-c21026/ImConveniencePower/blob/main/ScreenShot/GamePlay1.png)  
+![GamePlay2](https://github.com/itc-c21026/ImConveniencePower/blob/main/ScreenShot/GamePlay2.png)
