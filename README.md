@@ -51,5 +51,5 @@ Unity 2020.3.4f1
 
 ## ゲームスクリーンショット
 ![スクリーンショット (269)](https://user-images.githubusercontent.com/84373723/169730424-6b2689a0-2e8c-4885-89d1-c201f95df334.png)
-![スクリーンショット (220)](https://user-images.githubusercontent.com/84373723/169730983-ca5b1bfa-0123-4b69-8d96-a5aa5329d2e0.png)
-![スクリーンショット (219)](https://user-images.githubusercontent.com/84373723/169730990-27b64ab3-d5bc-46b4-ace6-2c70b6af2219.png)
+![スクリーンショット (270)](https://user-images.githubusercontent.com/84373723/169731437-ac001a8f-3f29-4480-860e-b5281fe2699c.png)
+![スクリーンショット (271)](https://user-images.githubusercontent.com/84373723/169731445-75c60a51-b6ff-4dd7-acfd-e6413b64e561.png)
