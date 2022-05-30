@@ -69,21 +69,6 @@ public class sorption : MonoBehaviour
 
         c += Time.deltaTime;
 
-
-        /*b += Time.deltaTime;
-        if (b >= 1)
-        {
-            Debug.Log(t);
-            Debug.Log(t2);
-            Debug.Log(t3);
-            Debug.Log(t4);
-            Debug.Log(t5);
-            Debug.Log(t6);
-            Debug.Log(t7);
-            Debug.Log(t8);
-        }*/
-        //Dtext.text = t + "\n" + t2 + "\n" + t3 + "\n" + t4 + "\n" + t5 + "\n" + t6 + "\n" + t7 + "\n" + t8 + "\n";
-
         if (nowTapTime == 0)
         {
             sorpCnt = 0;
@@ -94,11 +79,6 @@ public class sorption : MonoBehaviour
             target();
             //ScaleeCnt = 0;
         }
-
-        /*if (ScaleeCnt == 0)
-        {
-            scaleeReset();
-        }*/
 
         if (Input.GetMouseButton(0))
         {
@@ -136,7 +116,6 @@ public class sorption : MonoBehaviour
                     if (Input.GetKey(KeyCode.Space))
                     {
                     effec();
-                    //scalee();
                     T1();
                         r.velocity *= 0.9f;
                         r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -145,15 +124,13 @@ public class sorption : MonoBehaviour
                     if (nowTapTime >= longTapTime && Input.mousePosition.x >= Screen.width / 2)
                     {
                     effec();
-                    //scalee();
                     T1();
                     r.velocity *= 0.9f;
                         r.AddForce(direction * -20.2f, ForceMode.Acceleration);
                     }
-                    else if (nowTapTime >= longTapTime &&/* Input.mousePosition.x >= Screen.width / 2 && */Input.touchCount >= 2)
+                    else if (nowTapTime >= longTapTime && Input.touchCount >= 2)
                     {
                     effec();
-                    //scalee();
                     T1();
                     r.velocity *= 0.9f;
                         r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -165,7 +142,6 @@ public class sorption : MonoBehaviour
                 if (Input.GetKey(KeyCode.Space))
                 {
                     effec();
-                    //scalee();
                     T2();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -174,15 +150,13 @@ public class sorption : MonoBehaviour
                 if (nowTapTime >= longTapTime && Input.mousePosition.x >= Screen.width / 2)
                 {
                     effec();
-                    //scalee();
                     T2();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
                 }
-                else if (nowTapTime >= longTapTime &&/* Input.mousePosition.x >= Screen.width / 2 && */Input.touchCount >= 2)
+                else if (nowTapTime >= longTapTime && Input.touchCount >= 2)
                 {
                     effec();
-                    //scalee();
                     T2();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -193,7 +167,6 @@ public class sorption : MonoBehaviour
                 if (Input.GetKey(KeyCode.Space))
                 {
                     effec();
-                    //scalee();
                     T3();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -202,15 +175,13 @@ public class sorption : MonoBehaviour
                 if (nowTapTime >= longTapTime && Input.mousePosition.x >= Screen.width / 2)
                 {
                     effec();
-                    //scalee();
                     T3();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
                 }
-                else if (nowTapTime >= longTapTime &&/* Input.mousePosition.x >= Screen.width / 2 && */Input.touchCount >= 2)
+                else if (nowTapTime >= longTapTime && Input.touchCount >= 2)
                 {
                     effec();
-                    //scalee();
                     T3();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -221,7 +192,6 @@ public class sorption : MonoBehaviour
                 if (Input.GetKey(KeyCode.Space))
                 {
                     effec();
-                    //scalee();
                     T4();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -230,15 +200,13 @@ public class sorption : MonoBehaviour
                 if (nowTapTime >= longTapTime && Input.mousePosition.x >= Screen.width / 2)
                 {
                     effec();
-                    //scalee();
                     T4();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
                 }
-                else if (nowTapTime >= longTapTime &&/* Input.mousePosition.x >= Screen.width / 2 && */Input.touchCount >= 2)
+                else if (nowTapTime >= longTapTime && Input.touchCount >= 2)
                 {
                     effec();
-                    //scalee();
                     T4();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -249,7 +217,6 @@ public class sorption : MonoBehaviour
                 if (Input.GetKey(KeyCode.Space))
                 {
                     effec();
-                    //scalee();
                     T5();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -258,15 +225,13 @@ public class sorption : MonoBehaviour
                 if (nowTapTime >= longTapTime && Input.mousePosition.x >= Screen.width / 2)
                 {
                     effec();
-                    //scalee();
                     T5();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
                 }
-                else if (nowTapTime >= longTapTime &&/* Input.mousePosition.x >= Screen.width / 2 && */Input.touchCount >= 2)
+                else if (nowTapTime >= longTapTime && Input.touchCount >= 2)
                 {
                     effec();
-                    //scalee();
                     T5();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -277,7 +242,6 @@ public class sorption : MonoBehaviour
                 if (Input.GetKey(KeyCode.Space))
                 {
                     effec();
-                    //scalee();
                     T6();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -286,15 +250,13 @@ public class sorption : MonoBehaviour
                 if (nowTapTime >= longTapTime && Input.mousePosition.x >= Screen.width / 2)
                 {
                     effec();
-                    //scalee();
                     T6();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
                 }
-                else if (nowTapTime >= longTapTime &&/* Input.mousePosition.x >= Screen.width / 2 && */Input.touchCount >= 2)
+                else if (nowTapTime >= longTapTime && Input.touchCount >= 2)
                 {
                     effec();
-                    //scalee();
                     T6();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -305,7 +267,6 @@ public class sorption : MonoBehaviour
                 if (Input.GetKey(KeyCode.Space))
                 {
                     effec();
-                    //scalee();
                     T7();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -314,15 +275,13 @@ public class sorption : MonoBehaviour
                 if (nowTapTime >= longTapTime && Input.mousePosition.x >= Screen.width / 2)
                 {
                     effec();
-                    //scalee();
                     T7();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
                 }
-                else if (nowTapTime >= longTapTime &&/* Input.mousePosition.x >= Screen.width / 2 && */Input.touchCount >= 2)
+                else if (nowTapTime >= longTapTime && Input.touchCount >= 2)
                 {
                     effec();
-                    //scalee();
                     T7();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -333,7 +292,6 @@ public class sorption : MonoBehaviour
                 if (Input.GetKey(KeyCode.Space))
                 {
                     effec();
-                    //scalee();
                     T8();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -342,15 +300,13 @@ public class sorption : MonoBehaviour
                 if (nowTapTime >= longTapTime && Input.mousePosition.x >= Screen.width / 2)
                 {
                     effec();
-                    //scalee();
                     T8();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
                 }
-                else if (nowTapTime >= longTapTime &&/* Input.mousePosition.x >= Screen.width / 2 && */Input.touchCount >= 2)
+                else if (nowTapTime >= longTapTime && Input.touchCount >= 2)
                 {
                     effec();
-                    //scalee();
                     T8();
                     r.velocity *= 0.9f;
                     r.AddForce(direction * -20.2f, ForceMode.Acceleration);
@@ -466,17 +422,6 @@ public class sorption : MonoBehaviour
         t6 = null;
         t7 = null;
     }
-
-    /*void scalee()
-    {
-        ScaleeCnt++;
-        obj.transform.localScale = new Vector3(1f, 1f, 1f);
-    }
-
-    void scaleeReset()
-    {
-        obj.transform.localScale = new Vector3(1f, 1f, 11f);
-    }*/
 
     void effec()
     {
