@@ -18,6 +18,10 @@ Android
 ## 使用言語
 C#
 
+## 主なプログラム
+・[客の制御](https://github.com/itc-c21026/ImConveniencePower/blob/main/Scripts/Customer.cs)  
+・
+
 ## ゲームストーリー
 超能力(念動力)を持った店主がいるラーメン屋。  
 超能力を使いこなしてラーメンを作り、客に提供して満足させる！
