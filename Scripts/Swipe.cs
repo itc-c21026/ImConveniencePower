@@ -13,20 +13,20 @@ public class Swipe : MonoBehaviour
 
     public float speed = 0;
 
-    // ƒXƒƒCƒvÅ¬ˆÚ“®‹——£
+    // ã‚¹ãƒ¯ã‚¤ãƒ—æœ€å°ç§»å‹•è·é›¢
     [SerializeField]
     private Vector2 SwipeMinRange = new Vector2(50.0f, 50.0f);
-    // TAP‚ğNONE‚É–ß‚·‚Ü‚Å‚ÌƒJƒEƒ“ƒg
+    // TAPã‚’NONEã«æˆ»ã™ã¾ã§ã®ã‚«ã‚¦ãƒ³ãƒˆ
     [SerializeField]
     private int NoneCountMax = 2;
     private int NoneCountNow = 0;
-    // ƒXƒƒCƒv“ü—Í‹——£
+    // ã‚¹ãƒ¯ã‚¤ãƒ—å…¥åŠ›è·é›¢
     private Vector2 SwipeRange;
-    // “ü—Í•ûŒü‹L˜^—p
+    // å…¥åŠ›æ–¹å‘è¨˜éŒ²ç”¨
     private Vector2 InputSTART;
     private Vector2 InputMOVE;
     private Vector2 InputEND;
-    // ƒXƒƒCƒv‚Ì•ûŒü
+    // ã‚¹ãƒ¯ã‚¤ãƒ—ã®æ–¹å‘
     public enum SwipeDirection
     {
         NONE,
@@ -45,16 +45,15 @@ public class Swipe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //debugtext.text = "nowswipe" + NowSwipe + "\nƒ^ƒbƒvÀ•W" + Input.mousePosition.x;
 
         GetInputVector();
         trans();
     }
 
-    // “ü—Í‚Ìæ“¾
+    // å…¥åŠ›ã®å–å¾—
     private void GetInputVector()
     {
-        // Unityã‚Å‚Ì‘€ìæ“¾
+        // Unityä¸Šã§ã®æ“ä½œå–å¾—
         if (Application.isEditor)
         {
             if (Input.GetMouseButtonDown(0))
@@ -71,7 +70,7 @@ public class Swipe : MonoBehaviour
                 ResetParameter();
             }
         }
-        // ’[––ã‚Å‚Ì‘€ìæ“¾
+        // ç«¯æœ«ä¸Šã§ã®æ“ä½œå–å¾—
         else
         {
             if (Input.touchCount >= 2)
@@ -94,35 +93,25 @@ public class Swipe : MonoBehaviour
         }
     }
 
-    // “ü—Í“à—e‚©‚çƒXƒƒCƒv•ûŒü‚ğŒvZ
+    // å…¥åŠ›å†…å®¹ã‹ã‚‰ã‚¹ãƒ¯ã‚¤ãƒ—æ–¹å‘ã‚’è¨ˆç®—
     private void SwipeCLC()
     {
         SwipeRange = new Vector2((new Vector3(InputMOVE.x, 0, 0) - new Vector3(InputSTART.x, 0, 0)).magnitude, (new Vector3(0, InputMOVE.y, 0) - new Vector3(0, InputSTART.y, 0)).magnitude);
 
-        if (/*SwipeRange.x <= SwipeMinRange.x && */SwipeRange.y <= SwipeMinRange.y)
+        if (SwipeRange.y <= SwipeMinRange.y)
         {
             NowSwipe = SwipeDirection.TAP;
         }
-        /*else if (SwipeRange.x > SwipeRange.y)
-        {
-            float _x = Mathf.Sign(InputMOVE.x - InputSTART.x);
-            if (_x > 0) NowSwipe = SwipeDirection.RIGHT;
-            else if (_x < 0) NowSwipe = SwipeDirection.LEFT;
-        }*/
         else
         {
             float _y = Mathf.Sign(InputMOVE.y - InputSTART.y);
             if (_y > 0) NowSwipe = SwipeDirection.UP;
             else if (_y < 0) NowSwipe = SwipeDirection.DOWN;
             float _angle = Mathf.Atan2(InputEND.y - InputSTART.y, InputEND.x - InputSTART.x) * Mathf.Rad2Deg;
-            //if (-22.5f <= _angle && _angle < 22.5f) NowSwipe = SwipeDirection.RIGHT;
-            //else if (67.5f <= _angle && _angle < 112.5f) NowSwipe = SwipeDirection.UP;
-            //else if (157.5f <= _angle || _angle < -157.5f) NowSwipe = SwipeDirection.LEFT;
-            //else if (-112.5f <= _angle && _angle < -67.5f) NowSwipe = SwipeDirection.DOWN;
         }
     }
 
-    // NONE‚ÉƒŠƒZƒbƒg
+    // NONEã«ãƒªã‚»ãƒƒãƒˆ
     private void ResetParameter()
     {
         NoneCountNow++;
@@ -133,13 +122,13 @@ public class Swipe : MonoBehaviour
             SwipeRange = new Vector2(0, 0);
         }
     }
-    // ƒXƒƒCƒv•ûŒü‚Ìæ“¾
+    // ã‚¹ãƒ¯ã‚¤ãƒ—æ–¹å‘ã®å–å¾—
     public SwipeDirection GetNowSwipe()
     {
         return NowSwipe;
     }
 
-    // ƒXƒƒCƒv—Ê‚Ìæ“¾
+    // ã‚¹ãƒ¯ã‚¤ãƒ—é‡ã®å–å¾—
     public float GetSwipeRange()
     {
         if (SwipeRange.x > SwipeRange.y)
@@ -152,7 +141,7 @@ public class Swipe : MonoBehaviour
         }
     }
 
-    // ƒXƒƒCƒv—Ê‚Ìæ“¾
+    // ã‚¹ãƒ¯ã‚¤ãƒ—é‡ã®å–å¾—
     public Vector2 GetSwipeRangeVec()
     {
         if (NowSwipe != SwipeDirection.NONE)
@@ -167,12 +156,12 @@ public class Swipe : MonoBehaviour
 
     void trans()
     {
-        if(Input.mousePosition.x <= Screen.width / 2 && NowSwipe == SwipeDirection.UP/* && GetSwipeRange() >= 1*/)
+        if(Input.mousePosition.x <= Screen.width / 2 && NowSwipe == SwipeDirection.UP)
         {
             speed = 1;
             Vector3 velocity = cam.transform.rotation * new Vector3(0, 0, speed);
             obj.transform.position += velocity * Time.deltaTime;
-        }else if(/*Input.mousePosition.x <= Screen.width / 2 && */NowSwipe == SwipeDirection.UP/* && GetSwipeRange() >= 1 */&& Input.touchCount >= 2)
+        }else if(NowSwipe == SwipeDirection.UP && Input.touchCount >= 2)
         {
             speed = 1;
             Vector3 velocity = cam.transform.rotation * new Vector3(0, 0, speed);
@@ -180,12 +169,12 @@ public class Swipe : MonoBehaviour
         }
 
 
-        if(Input.mousePosition.x <= Screen.width / 2 && NowSwipe == SwipeDirection.DOWN/* && GetSwipeRange() >= 1*/)
+        if(Input.mousePosition.x <= Screen.width / 2 && NowSwipe == SwipeDirection.DOWN)
         {
             speed = -1;
             Vector3 velocity = cam.transform.rotation * new Vector3(0, 0, speed);
             obj.transform.position += velocity * Time.deltaTime;
-        }else if(/*Input.mousePosition.x <= Screen.width / 2 && */NowSwipe == SwipeDirection.DOWN/* && GetSwipeRange() >= 1 */&& Input.touchCount >= 2)
+        }else if(NowSwipe == SwipeDirection.DOWN && Input.touchCount >= 2)
         {
             speed = -1;
             Vector3 velocity = cam.transform.rotation * new Vector3(0, 0, speed);
