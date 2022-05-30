@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// PCãƒ†ã‚¹ãƒˆãƒ—ãƒ¬ã‚¤ç”¨
 public class ControlCamera : MonoBehaviour
 {
     public float mouseSensitivity = 1f;
@@ -51,7 +52,6 @@ public class ControlCamera : MonoBehaviour
         }
     }
 
-    // ƒJƒƒ‰‘€ì•â³
     public static float ClampAngle(float angle, float min, float max)
     {
         if (angle < -360f)
