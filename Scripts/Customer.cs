@@ -11,7 +11,7 @@ public class Customer : MonoBehaviour
     GameObject Pl;
     Plate script2;
 
-    private NavMeshAgent agent;     //ƒG[ƒWƒFƒ“ƒg‚Æ‚È‚éƒIƒuƒWƒFƒNƒg‚ÌNavMeshAgentŠi”[—p 
+    private NavMeshAgent agent;     //ã‚¨ãƒ¼ã‚¸ã‚§ãƒ³ãƒˆã¨ãªã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®NavMeshAgentæ ¼ç´ç”¨ 
     public bool GoalHantei = true;
     public int d = 3;
     
@@ -34,7 +34,7 @@ public class Customer : MonoBehaviour
         script = Hantei.GetComponent<HanteiScript>();
         Pl = GameObject.Find("Plate");
         script2 = Pl.GetComponent<Plate>();
-        //ƒG[ƒWƒFƒ“ƒg‚ÌNaveMeshAgent‚ğæ“¾‚·‚é
+        //ã‚¨ãƒ¼ã‚¸ã‚§ãƒ³ãƒˆã®NaveMeshAgentã‚’å–å¾—ã™ã‚‹
         agent = GetComponent<NavMeshAgent>();
 
     }
@@ -140,19 +140,13 @@ public class Customer : MonoBehaviour
     {
         if (a == 1)
         {
-            /*c += Time.deltaTime;
-            if (c >= 0.2)
-            {
-                f += 0.5f;
-                c = 0;
-            }*/
-            // transform‚ğæ“¾
+            // transformã‚’å–å¾—
             Transform myTransform = this.transform;
-            // ƒ[ƒ‹ƒhÀ•W‚ğŠî€‚ÉA‰ñ“]‚ğæ“¾
+            // ãƒ¯ãƒ¼ãƒ«ãƒ‰åº§æ¨™ã‚’åŸºæº–ã«ã€å›è»¢ã‚’å–å¾—
             Vector3 localAngle = myTransform.localEulerAngles;
             //Debug.Log("yeah");
             localAngle.y = 180.0f;
-            myTransform.eulerAngles = localAngle; // ‰ñ“]Šp“x‚ğİ’è
+            myTransform.eulerAngles = localAngle; // å›è»¢è§’åº¦ã‚’è¨­å®š
 
             b += Time.deltaTime;
 
@@ -161,35 +155,6 @@ public class Customer : MonoBehaviour
                 b = 0;
                 a = 0;
             }
-            /*if (f == 0.5)
-            {
-                worldAngle.y = -158.0f;
-            }
-            else if (f == 1.0f)
-            {
-                worldAngle.y = -161.0f;
-            }
-            else if (f == 1.5f)
-            {
-                worldAngle.y = -166.0f;
-            }
-            else if (f == 2.0f)
-            {
-                worldAngle.y = -171.0f;
-            }
-            else if (f == 2.5f)
-            {
-                worldAngle.y = -175.0f;
-            }
-            else if (f == 3.0f)
-            {
-                worldAngle.y = -178.0f;
-            }
-            else if (f == 3.5f)
-            {
-                worldAngle.y = -180.0f;
-                a = 0;
-            }*/
         }
 
     }
