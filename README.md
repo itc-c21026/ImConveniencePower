@@ -3,9 +3,7 @@ c21026 與那覇帆風
 チーム制作「いんこんびにえんすぱわー」
 
 ## ファイル構成
-・[Unityデータ_scripts](Scripts)  
-・[Unityデータ_others](others)  
-ビルド
+・[Unityデータ](ImConveniencePower)
 
 ## 概要
 
@@ -13,15 +11,15 @@ c21026 與那覇帆風
 シミュレーションゲーム
 
 ## プラットフォーム
-Android
+・[Android](https://github.com/itc-c21026/ImConveniencePower/blob/main/InConveniencePower/InConveniencePower.apk)
 
 ## 使用言語
 C#
 
 ## 主なプログラム
-・[客の制御](https://github.com/itc-c21026/ImConveniencePower/blob/main/Scripts/Customer.cs)  
-・[ラーメンのトッピング配列](https://github.com/itc-c21026/ImConveniencePower/blob/main/Scripts/Ramen.cs)  
-・[ラーメンを客に提供した時の正誤判定](https://github.com/itc-c21026/ImConveniencePower/blob/main/Scripts/Plate.cs)
+・[客の制御](https://github.com/itc-c21026/ImConveniencePower/blob/main/InConveniencePower/Assets/Scripts/Customer.cs)  
+・[ラーメンのトッピング配列](https://github.com/itc-c21026/ImConveniencePower/blob/main/InConveniencePower/Assets/Scripts/Ramen.cs)  
+・[ラーメンを客に提供した時の正誤判定](https://github.com/itc-c21026/ImConveniencePower/blob/main/InConveniencePower/Assets/Scripts/Plate.cs)
 
 ## ゲームストーリー
 超能力(念動力)を持った店主がいるラーメン屋。  
