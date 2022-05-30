@@ -26,14 +26,10 @@ public class Plate : MonoBehaviour
     public int Sc = 0;
 
     int i;
-
-    //GameObject obj;
-//float b;
+    
 private void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        //Utuwa = GameObject.FindGameObjectWithTag("Ramen");
-        //Application.targetFrameRate = 30;
 
         exi = false;
 
@@ -42,23 +38,11 @@ private void Start()
         Spw = GameObject.Find("DonburiSpawn");
         script3 = Spw.GetComponent<SpawnScript>();
     }
-        //obj = GameObject.FindGameObjectWithTag("Ramen");
-
-        /*b += Time.deltaTime;
-        if (b >= 2)
-        {
-            Debug.Log("Plateトッピング" + script2.Topping);
-            b = 0;
-        }*/
-        //Debug.Log(scrip.topping);
+    
     private void OnCollisionEnter(Collision collision)
     {
-        //Debug.Log("abc");
         if (collision.gameObject.tag == targetTag)
         {
-            //Debug.Log("abc");
-            //Destroy(gameObject);
-            //Debug.Log("客1 " + script.B + " トッピング " + script3.a[0]);
             i++;
             if (script.B/* == 1 */== script3.a[0])
             {
@@ -84,10 +68,6 @@ private void Start()
     public void TrFa()
     {
         exi = true;
-        /*foreach (GameObject Ra in objects)
-        {
-            Destroy(Ra);
-        }*/
         script3.RamenspwanCnt = 1;
         script3.a[0] = 0;
     }
