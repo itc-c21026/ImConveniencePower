@@ -3,7 +3,7 @@ c21026 與那覇帆風
 チーム制作「いんこんびにえんすぱわー」
 
 ## ファイル構成
-・[Unityデータ](ImConveniencePower)
+・[Unityデータ](InConveniencePower)
 
 ## 概要
 
