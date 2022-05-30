@@ -20,7 +20,8 @@ C#
 
 ## 主なプログラム
 ・[客の制御](https://github.com/itc-c21026/ImConveniencePower/blob/main/Scripts/Customer.cs)  
-・[ラーメンのトッピング配列](https://github.com/itc-c21026/ImConveniencePower/blob/main/Scripts/Ramen.cs)
+・[ラーメンのトッピング配列](https://github.com/itc-c21026/ImConveniencePower/blob/main/Scripts/Ramen.cs)  
+・[ラーメンを客に提供した時の正誤判定](https://github.com/itc-c21026/ImConveniencePower/blob/main/Scripts/Plate.cs)
 
 ## ゲームストーリー
 超能力(念動力)を持った店主がいるラーメン屋。  
