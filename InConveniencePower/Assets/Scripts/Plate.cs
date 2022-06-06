@@ -44,7 +44,7 @@ private void Start()
         if (collision.gameObject.tag == targetTag)
         {
             i++;
-            if (script.B/* == 1 */== script3.a[0])
+            if (script.B == script3.a[0])
             {
                 audioSource.PlayOneShot(Atari);
                 audioSource.PlayOneShot(Okane);
