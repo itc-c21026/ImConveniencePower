@@ -24,7 +24,7 @@ public class Customer : MonoBehaviour
     float f = 0;
 
     bool bl = true;
-    // Use this for initialization
+
     void Start()
     {
         d = 0;
@@ -46,7 +46,6 @@ public class Customer : MonoBehaviour
 
         CTM();
         E();
-        //Debug.Log(a);
         Ro();
 
         if (bl == true)
