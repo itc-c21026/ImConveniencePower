@@ -107,6 +107,7 @@ public class sorption : MonoBehaviour
             {
                 if (other.gameObject.tag == t)
                 {
+                    // PC(テスト用)
                     if (Input.GetKey(KeyCode.Space))
                     {
                     effec();
@@ -114,7 +115,8 @@ public class sorption : MonoBehaviour
                         r.velocity *= 0.9f;
                         r.AddForce(direction * -20.2f, ForceMode.Acceleration);
                     }
-
+                    
+                    // スワイプ
                     if (nowTapTime >= longTapTime && Input.mousePosition.x >= Screen.width / 2)
                     {
                     effec();
@@ -122,6 +124,7 @@ public class sorption : MonoBehaviour
                     r.velocity *= 0.9f;
                         r.AddForce(direction * -20.2f, ForceMode.Acceleration);
                     }
+                    // 2本指で画面タップしてもそのままの状態で操作できる
                     else if (nowTapTime >= longTapTime && Input.touchCount >= 2)
                     {
                     effec();
