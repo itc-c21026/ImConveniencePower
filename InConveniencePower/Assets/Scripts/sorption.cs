@@ -116,7 +116,7 @@ public class sorption : MonoBehaviour
                         r.AddForce(direction * -20.2f, ForceMode.Acceleration);
                     }
                     
-                    // スワイプ
+                    // タップ
                     if (nowTapTime >= longTapTime && Input.mousePosition.x >= Screen.width / 2)
                     {
                     effec();
